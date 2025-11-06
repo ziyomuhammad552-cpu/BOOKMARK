@@ -59,7 +59,7 @@ body {
 	font-family: 'Rubik ';
 	font-weight: 400;
 	font-size: 18px;
-	line-height: 28px;
+	line-height: 1.6;
 }
 
 .container {
@@ -140,4 +140,147 @@ body {
 	opacity: 0.6;
 }
 
+.menu {
+	display: none;
+}
+
+.phone {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: var(--dark-blue);
+	backdrop-filter: blur(32.619380950927734px);
+	padding: 40px 32px 48px;
+	display: flex;
+	flex-direction: column;
+	transform: translateX(-100%);
+	transition: all 1s ease;
+}
+
+.phone.show {
+	transform: translateX(0);
+}
+.phone__top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+.phone__logo {
+	display: flex;
+}
+.phone__close {
+	border: none;
+	background-color: transparent;
+}
+
+.phone__list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-bottom: 24px;
+	color: var(--white-color);
+}
+.phone__item {
+	width: 100%;
+	border-top: 1px solid var(--white-color);
+	padding: 24px;
+	text-align: center;
+}
+
+.phone__item:last-child {
+	width: 100%;
+	border-bottom: 1px solid var(--white-color);
+	padding: 24px;
+	text-align: center;
+}
+.phone__link {
+	font-weight: 400;
+	font-size: 20px;
+	letter-spacing: 2.31px;
+	color: var(--white-color);
+}
+
+.phone__login {
+	display: block;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	width: 100%;
+	text-align: center;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 17px;
+	letter-spacing: 2.31px;
+	border: 2px solid var(--white-color);
+	border-radius: 5px;
+	color: var(--white-color);
+}
+
+.phone__social {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 40px;
+}
+
+.phone__social-link {
+	display: flex;
+}
+
 /* HEADER END */
+
+/* MEDIA START */
+@media screen and (max-width: 768px) {
+	body {
+		font-size: 16px;
+	}
+
+	/* HEADER START */
+	.header {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.header__container {
+		gap: 36px;
+	}
+
+	.nav {
+		gap: 24px;
+	}
+
+	.btn {
+		padding: 10px 12px;
+	}
+}
+
+@media screen and (max-width: 573px) {
+	.nav__link {
+		font-size: 10px;
+	}
+
+	.btn {
+		font-size: 10px;
+		padding: 6px 10px;
+	}
+}
+
+@media screen and (max-width: 475px) {
+	.nav {
+		display: none;
+	}
+
+	.btn {
+		display: none;
+	}
+
+	.menu {
+		display: flex;
+		border: none;
+		background-color: transparent;
+	}
+}
+/* MEDIA END */

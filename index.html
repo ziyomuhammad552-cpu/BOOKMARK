@@ -15,7 +15,7 @@
 	<body>
 		<header class="header">
 			<div class="container header__container">
-				<a class="logo" href="/">
+				<a class="logo" href="index.html">
 					<img src="images/header/logo.svg" alt="logo" width="149" height="25" />
 				</a>
 				<ul class="nav">
@@ -32,7 +32,51 @@
 					</li>
 				</ul>
 				<a class="btn" href="#">LOGIN</a>
+				<button id="menu-open" class="menu">
+					<img src="images/header/menu.svg" alt="menu" />
+				</button>
 			</div>
+			<!-- PHONE MENU START -->
+			<div class="phone">
+				<div class="phone__top">
+					<a class="phone__logo" href="index.html">
+						<img src="images/header/phone-logo.svg" alt="phone-logo" />
+					</a>
+					<button id="menu-close" class="phone__close">
+						<img src="images/header/site-toggler-close.svg" alt="close" />
+					</button>
+				</div>
+
+				<ul class="phone__list">
+					<li class="phone__item">
+						<a class="phone__link" href="#">FEATURES</a>
+					</li>
+
+					<li class="phone__item">
+						<a class="phone__link" href="#">PRICING</a>
+					</li>
+
+					<li class="phone__item">
+						<a class="phone__link" href="#">CONTACT</a>
+					</li>
+				</ul>
+				<a class="phone__login" href="#">LOGIN</a>
+				<ul class="phone__social">
+					<li class="phone__social-item">
+						<a class="phone__social-link" href="https://facebook.com/">
+							<img src="images/header/facebook.svg" alt="facebook" />
+						</a>
+					</li>
+
+					<li class="phone__social-item">
+						<a class="phone__social-link" href="https://facebook.com/">
+							<img src="images/header/twitter.svg" alt="twitter" />
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- PHONE MENU END -->
 		</header>
+		<script src="js/main.js"></script>
 	</body>
 </html>
